@@ -1,0 +1,18 @@
+Install buster lite
+
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt-get install imagemagick
+sudo apt install tesseract-ocr
+
+https://github.com/Shreeshrii/tessdata_ssd
+
+cd /tmp
+wget https://project-downloads.drogon.net/wiringpi-latest.deb
+sudo dpkg -i wiringpi-latest.deb
+
+Download 7segment trained data from https://github.com/Shreeshrii/tessdata_ssd
+
+sudo cp ssd.traineddata /usr/share/tesseract-ocr/4.00/tessdata/ssd.traineddata
